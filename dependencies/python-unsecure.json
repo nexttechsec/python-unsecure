@@ -27,7 +27,7 @@
         "package": {
             "key": "charset-normalizer",
             "package_name": "charset-normalizer",
-            "installed_version": "2.0.12"
+            "installed_version": "2.1.1"
         },
         "dependencies": []
     },
@@ -36,22 +36,6 @@
             "key": "click",
             "package_name": "click",
             "installed_version": "7.1.2"
-        },
-        "dependencies": []
-    },
-    {
-        "package": {
-            "key": "colorama",
-            "package_name": "colorama",
-            "installed_version": "0.4.6"
-        },
-        "dependencies": []
-    },
-    {
-        "package": {
-            "key": "commonmark",
-            "package_name": "commonmark",
-            "installed_version": "0.9.1"
         },
         "dependencies": []
     },
@@ -292,7 +276,7 @@
             {
                 "key": "requests",
                 "package_name": "requests",
-                "installed_version": "2.27.1",
+                "installed_version": "2.28.1",
                 "required_version": ">=2.18.0,<3.0.0dev"
             }
         ]
@@ -386,14 +370,6 @@
     },
     {
         "package": {
-            "key": "lxml",
-            "package_name": "lxml",
-            "installed_version": "4.6.0"
-        },
-        "dependencies": []
-    },
-    {
-        "package": {
             "key": "markupsafe",
             "package_name": "MarkupSafe",
             "installed_version": "2.0.1"
@@ -467,7 +443,7 @@
             {
                 "key": "requests",
                 "package_name": "requests",
-                "installed_version": "2.27.1",
+                "installed_version": "2.28.1",
                 "required_version": ">=2.19.0"
             }
         ]
@@ -618,14 +594,6 @@
     },
     {
         "package": {
-            "key": "pygments",
-            "package_name": "Pygments",
-            "installed_version": "2.13.0"
-        },
-        "dependencies": []
-    },
-    {
-        "package": {
             "key": "python-dateutil",
             "package_name": "python-dateutil",
             "installed_version": "2.8.2"
@@ -659,7 +627,7 @@
         "package": {
             "key": "requests",
             "package_name": "requests",
-            "installed_version": "2.27.1"
+            "installed_version": "2.28.1"
         },
         "dependencies": [
             {
@@ -671,8 +639,8 @@
             {
                 "key": "charset-normalizer",
                 "package_name": "charset-normalizer",
-                "installed_version": "2.0.12",
-                "required_version": "~=2.0.0"
+                "installed_version": "2.1.1",
+                "required_version": ">=2,<3"
             },
             {
                 "key": "idna",
@@ -700,33 +668,6 @@
                 "package_name": "six",
                 "installed_version": "1.16.0",
                 "required_version": ">=1.7.0"
-            }
-        ]
-    },
-    {
-        "package": {
-            "key": "rich",
-            "package_name": "rich",
-            "installed_version": "11.0.0"
-        },
-        "dependencies": [
-            {
-                "key": "colorama",
-                "package_name": "colorama",
-                "installed_version": "0.4.6",
-                "required_version": ">=0.4.0,<0.5.0"
-            },
-            {
-                "key": "commonmark",
-                "package_name": "commonmark",
-                "installed_version": "0.9.1",
-                "required_version": ">=0.9.0,<0.10.0"
-            },
-            {
-                "key": "pygments",
-                "package_name": "pygments",
-                "installed_version": "2.13.0",
-                "required_version": ">=2.6.0,<3.0.0"
             }
         ]
     },
