@@ -1,0 +1,47 @@
+name: Process Project Dependencies
+on:
+  push:
+    branches:
+      - main
+jobs:
+  check-if-should-process:
+    runs-on: ubuntu-latest
+    # Declare outputs for next jobs
+    outputs:
+      docs_changed: ${{ steps.check_file_changed.outputs.docs_changed }}
+    steps:
+      # Checkout the repository to the GitHub Actions runner
+      - name: Checkout code
+        uses: actions/checkout@v3
+        with:
+          # Checkout as many commits as needed for the diff
+          fetch-depth: 2
+      - shell: pwsh
+        id: check_file_changed
+        run: |
+          # Diff HEAD with the previous commit
+          $diff = git diff --name-only HEAD^ HEAD
+          
+          # Check if a file under dependencies/ has changed (added, modified, deleted)
+          $SourceDiff = $diff | Where-Object { $_ -match '^dependencies/' }
+          $HasDiff = $SourceDiff.Length -gt 0
+          
+          # Set the output named "docs_changed"
+          Write-Host "::set-output name=docs_changed::$HasDiff"
+  # Run the job only with "docs_changed" equals "True"
+  process-dependencies:
+    permissions: write-all
+    runs-on: ubuntu-latest
+    needs: [ check-if-should-process ]
+    if: needs.check-if-should-process.outputs.docs_changed == 'True'
+    steps:
+      # Checkout the repository to the GitHub Actions runner
+      - name: Checkout code
+        uses: actions/checkout@v3
+      - name: 'Generic Dependency Submission'
+        uses: nexttechsec/generic-dependency-submission@v2.2.3
+        with:
+          language: 'python'
+          dependency-management: 'pip'
+          manifest-files: |
+            dependencies/dependencies.json

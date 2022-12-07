@@ -1,0 +1,126 @@
+[
+    {
+        "package": {
+            "key": "certifi",
+            "package_name": "certifi",
+            "installed_version": "2022.9.24"
+        },
+        "dependencies": []
+    },
+    {
+        "package": {
+            "key": "charset-normalizer",
+            "package_name": "charset-normalizer",
+            "installed_version": "2.0.12"
+        },
+        "dependencies": []
+    },
+    {
+        "package": {
+            "key": "colorama",
+            "package_name": "colorama",
+            "installed_version": "0.4.6"
+        },
+        "dependencies": []
+    },
+    {
+        "package": {
+            "key": "commonmark",
+            "package_name": "commonmark",
+            "installed_version": "0.9.1"
+        },
+        "dependencies": []
+    },
+    {
+        "package": {
+            "key": "idna",
+            "package_name": "idna",
+            "installed_version": "3.4"
+        },
+        "dependencies": []
+    },
+    {
+        "package": {
+            "key": "lxml",
+            "package_name": "lxml",
+            "installed_version": "4.6.0"
+        },
+        "dependencies": []
+    },
+    {
+        "package": {
+            "key": "pygments",
+            "package_name": "Pygments",
+            "installed_version": "2.13.0"
+        },
+        "dependencies": []
+    },
+    {
+        "package": {
+            "key": "requests",
+            "package_name": "requests",
+            "installed_version": "2.27.1"
+        },
+        "dependencies": [
+            {
+                "key": "certifi",
+                "package_name": "certifi",
+                "installed_version": "2022.9.24",
+                "required_version": ">=2017.4.17"
+            },
+            {
+                "key": "charset-normalizer",
+                "package_name": "charset-normalizer",
+                "installed_version": "2.0.12",
+                "required_version": "~=2.0.0"
+            },
+            {
+                "key": "idna",
+                "package_name": "idna",
+                "installed_version": "3.4",
+                "required_version": ">=2.5,<4"
+            },
+            {
+                "key": "urllib3",
+                "package_name": "urllib3",
+                "installed_version": "1.26.13",
+                "required_version": ">=1.21.1,<1.27"
+            }
+        ]
+    },
+    {
+        "package": {
+            "key": "rich",
+            "package_name": "rich",
+            "installed_version": "11.0.0"
+        },
+        "dependencies": [
+            {
+                "key": "colorama",
+                "package_name": "colorama",
+                "installed_version": "0.4.6",
+                "required_version": ">=0.4.0,<0.5.0"
+            },
+            {
+                "key": "commonmark",
+                "package_name": "commonmark",
+                "installed_version": "0.9.1",
+                "required_version": ">=0.9.0,<0.10.0"
+            },
+            {
+                "key": "pygments",
+                "package_name": "pygments",
+                "installed_version": "2.13.0",
+                "required_version": ">=2.6.0,<3.0.0"
+            }
+        ]
+    },
+    {
+        "package": {
+            "key": "urllib3",
+            "package_name": "urllib3",
+            "installed_version": "1.26.13"
+        },
+        "dependencies": []
+    }
+]
