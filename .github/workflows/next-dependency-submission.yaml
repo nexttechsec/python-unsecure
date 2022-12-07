@@ -44,4 +44,4 @@ jobs:
           language: 'python'
           dependency-management: 'pip'
           manifest-files: |
-            dependencies/dependencies.json
+            dependencies/python-unsecure.json
