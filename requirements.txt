@@ -10,6 +10,6 @@ opencensus_ext_flask==0.7.4
 opencensus_ext_requests==0.7.4
 pandas==1.2.5
 plotly==4.7.1
-redis==3.5.2
+redis==4.4.4
 dash-pivottable==0.0.2
 MarkupSafe==2.0.1
