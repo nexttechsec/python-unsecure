@@ -1,7 +1,7 @@
 dash==1.21.0
 dash_extensions==0.0.53
 dash-bootstrap-components==0.13.0
-Flask==1.1.4
+Flask==2.3.2
 Flask_Caching==1.10.0
 gunicorn==20.0.4
 opencensus-ext-logging==0.1.0
